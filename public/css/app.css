@@ -1,0 +1,248 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ffffff, #a5a6f6);
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    box-sizing: border-box;
+    position: absolute;
+    left: 164px;
+    top: 30px;
+    text-decoration: none;
+    width: 1087px;
+    height: 30px;
+}
+
+.navbar-menu {
+    width: 415px;
+    height: 21px;
+    position: absolute;
+    left: 672px;
+    top: 0px;
+}
+
+.navbar-menu span {
+    display: inline;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+#cari-duit a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    width: 86px;
+    height: 30px;
+}
+
+.menu {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer {
+    width: 294px;
+    height: 22px;
+    position: absolute;
+    left: 573px;
+    top: 700px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.content {
+    display: flex;
+    position: absolute;
+    max-width: 50%;
+    padding-right: 20px;
+    left: 164px;
+    top: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#halo-selamat-datang {
+    width: 268px;
+    height: 36px;
+    font-size: 23px;
+    font-weight: 600;
+    color: #ef5da8;
+}
+
+#temukan {
+    font-size: 48px;
+    font-weight: 800;
+    width: 546px;
+    height: 144px;
+    padding: 5px;
+}
+
+#bekerjalah {
+    font-size: 14px;
+    width: 369px;
+    height: 54px;
+    font-weight: 200;
+}
+
+#elipse {
+    position: absolute;
+    width: 450px;
+    height: 435px;
+    left: 670px;
+    top: 2px;
+}
+#rocket {
+    position: absolute;
+    width: 393.82px;
+    height: 567.74px;
+    left: 710px;
+    top: -100px;
+}
+#code {
+    position: absolute;
+    width: 121px;
+    height: 121px;
+    left: 950px;
+    top: -40px;
+}
+#fire {
+    position: absolute;
+    width: 121px;
+    height: 121px;
+    left: 1030px;
+    top: 220px;
+}
+#coin {
+    position: absolute;
+    width: 121px;
+    height: 121px;
+    left: 630px;
+    top: 150px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    left: 164px;
+    top: 160px;
+    margin-top: -50px;
+    margin-left: -13px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 18px;
+    border-radius: 15px;
+}
+#daftar,
+#login {
+    flex: 1;
+}
+#daftar {
+    background-color: #5d5fef;
+}
+#login {
+    background-color: white;
+    color: black;
+    border: 1px solid #5d5fef;
+}
+
+@keyframes rocket-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#rocket {
+    animation: rocket-animation 2s ease-in-out infinite;
+}
+
+@keyframes code-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes fire-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes coin-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes elipse-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#rocket {
+    animation: rocket-animation 2s ease-in-out infinite;
+}
+
+#code {
+    animation: code-animation 4s linear infinite;
+}
+
+#fire {
+    animation: fire-animation 3s ease-in-out infinite;
+}
+
+#coin {
+    animation: coin-animation 2s ease-in-out infinite;
+}
+
+#elipse {
+    animation: elipse-animation 6s linear infinite;
+}
